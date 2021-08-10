@@ -1,3 +1,4 @@
+<div class="container bg-white">
 <h1> <%= @task.title %></h1>
 <p><%= @task.details %></p>
 <% if @task.completed == true %>
@@ -6,5 +7,6 @@
   <p>This task is not completed.</p>
 <% end %>
 
-<%= link_to "Edit this task", edit_task_path %>
-<%= link_to "Back to tasks", tasks_path %>
+<%= link_to "Edit this task", edit_task_path, :class => "btn btn-light" %>
+<%= link_to "Back to tasks", tasks_path, :class => "btn btn-light" %>
+</div>

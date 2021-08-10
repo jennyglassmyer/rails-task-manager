@@ -1,7 +1,14 @@
+<div class="container bg-white">
+
+<div class="d-flex justify-content-between align-items-center">
+<h1>New Task</h1>
+<p><%= link_to "Back to tasks list", tasks_path, :class => "btn btn-light" %></p>
+</div>
+
 <%= simple_form_for(@task) do |f| %>
   <%= f.input :title %>
   <%= f.input :details %>
-  <%= f.submit %>
+  <%= f.submit :class => "btn btn-light" %>
 <% end %>
 
-<p><%= link_to "Back to tasks list", tasks_path %></p>
+</div>
